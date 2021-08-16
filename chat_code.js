@@ -25,7 +25,7 @@ function getData() {
             replaceURLWithHTMLLinks(message)
             // <span class='glyphicon glyphicon-thumbs-up'>Like: " + like + "</span></button>
             name_with_tag = "<h4> " + name + "<img class='user_tick' src='tick.png'></h4>";
-            message_with_tag = "<h4 class='message_h4' style='word-break: break-all;'>" + message + "</h4>";
+            message_with_tag = "<h4 class='message_h4' style='word-wrap: break-word;'>" + message + "</h4>";
             like_button = "<button class='btn btn-warning' id=" + firebase_message_id + " value=" + like + " onclick='updateLike(this.id)'>";
             span_with_tag = "<button class='btn btn-danger' id=" + firebase_message_id + " onclick='deletet(this.id)'>Delete</button><hr><br>";
             row = name_with_tag + message_with_tag + span_with_tag;
